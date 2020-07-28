@@ -187,6 +187,7 @@
     properties:
       RevokeOwner: true
       PortList: ref:/port
+      AutoConnect: true
 
 -
   name: start devices

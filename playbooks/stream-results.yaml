@@ -75,6 +75,7 @@
     properties:
       RevokeOwner: true
       PortList: ref:/port
+      AutoConnect: true
 
 -
   name: subscribe to streamblock results

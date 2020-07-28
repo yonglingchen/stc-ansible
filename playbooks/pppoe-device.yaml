@@ -118,6 +118,7 @@
     properties:
       RevokeOwner: true
       PortList: ref:/port
+      AutoConnect: true
 
 # ----------------- then bind the devices ------------------
 
