@@ -12,7 +12,7 @@
     action: session
     user: ansible
     name: create_device
-    kill_existing: false
+    kill_existing: true
     reset_existing: true
 
 
@@ -77,7 +77,7 @@
   stc: 
     action: config
     count: 2
-    objects: /EmulatedDevice[@Name='client-$item']
+    objects: /EmulatedDevice[@Name='dev-$item']
     properties:
         Ipv4If: 
           AddrStep: 0.0.0.1

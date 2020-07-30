@@ -11,6 +11,7 @@
     user: ansible
     name: stream_results
     chassis: "{{ hostvars[inventory_hostname].chassis }}"
+    kill_existing: true
 
 - 
   name: Create 2 base ports
@@ -75,7 +76,6 @@
     properties:
       RevokeOwner: true
       PortList: ref:/port
-      AutoConnect: true
 
 -
   name: subscribe to streamblock results

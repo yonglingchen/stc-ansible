@@ -12,7 +12,7 @@
     action: session
     user: ansible
     name: system_props
-    kill_existing: false
+    kill_existing: true
     reset_existing: true
 
 

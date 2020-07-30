@@ -6,6 +6,7 @@
     user: ansible
     name: stream-drv
     chassis: "{{ hostvars[inventory_hostname].chassis }}"
+    kill_existing: true
 
 
 - 
@@ -83,7 +84,6 @@
     properties:
       RevokeOwner: true
       PortList: ref:/port
-      AutoConnect: true
 
 -
   name: Start the traffic

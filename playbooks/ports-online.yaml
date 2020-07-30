@@ -5,6 +5,7 @@
     user: ansible
     name: ports_online
     chassis: "{{ hostvars[inventory_hostname].chassis }}"
+    kill_existing: true
 
 -
   name: Create the base ports

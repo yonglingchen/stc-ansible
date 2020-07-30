@@ -9,7 +9,7 @@
     names: "port[1:4] ethernet2/5 [4:9]_Ethernet1_9"
     #ports: "{{ hostvars[inventory_hostname].ports }}"
     #names: "{{ hostvars[inventory_hostname].names }}"
-
+    kill_existing: true
 -
   name: Create the base ports
   stc:

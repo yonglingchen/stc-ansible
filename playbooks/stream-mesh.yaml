@@ -10,6 +10,7 @@
     action: session
     user: ansible
     name: stream_mesh
+    kill_existing: true
 
 - 
   name: Create 5 base ports

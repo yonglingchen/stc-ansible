@@ -6,6 +6,7 @@
     action: session
     user: ansible
     name: file_download
+    kill_existing: true
 
 - name: list the available files
   register: files
