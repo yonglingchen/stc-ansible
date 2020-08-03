@@ -10,7 +10,6 @@
     action: session
     user: ansible
     name: igmp
-    kill_existing: true
 
 - 
   name: Create 18 base ports

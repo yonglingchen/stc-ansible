@@ -11,7 +11,7 @@
     action: session
     user: ansible
     name: datamodel_loader
-    kill_existing: true
+
 
 - name: create temporary build directory
   register: tempfolder

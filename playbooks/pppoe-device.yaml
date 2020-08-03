@@ -11,7 +11,6 @@
     user: ansible
     name: pppoe_device
     chassis: "{{ hostvars[inventory_hostname].chassis }}"
-    kill_existing: true
 
 
 - 
@@ -119,6 +118,7 @@
     properties:
       RevokeOwner: true
       PortList: ref:/port
+      AutoConnect: true
 
 # ----------------- then bind the devices ------------------
 

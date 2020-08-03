@@ -13,7 +13,7 @@
     user: ansible
     name: basic_device
     chassis: "{{ hostvars[inventory_hostname].chassis }}"
-    kill_existing: true
+
 
 - 
   name: Create the base ports
