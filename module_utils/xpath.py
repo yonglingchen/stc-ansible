@@ -289,6 +289,16 @@ class Selector:
 
         log.debug("Selector: candidates are %s" % [str(n) for n in selection])
 
+        # reorder selection to get correct sequence
+        lenSel = len(selection)
+        # if objects are multiple, order this sequence to get correct value
+        if lenSel > 0:
+            for i in range(lenSel):
+                for j in range(0, lenSel-i-1):
+                    if str(selection[j]) > str(selection[j+1]):
+                        selection[j], selection[j+1] = selection[j+1], selection[j]
+
+
         for selector in self.selectors:
 
             # oselection = selection
