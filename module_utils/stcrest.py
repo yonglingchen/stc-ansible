@@ -56,7 +56,7 @@ class StcRest:
         if newSession:
             log.info("Creating the session now...")
             params = {'userid': user_name, 'sessionname': session_name}
-            rsp = conn.post(url, data=params, timeout=60 * 2)
+            rsp = conn.post(url, data=params, timeout=60 * 5)
             log.info("SESSION %s %s -> [%d] %s" % (url, json.dumps(params, indent=4), rsp.status_code, rsp.content))
             if rsp.status_code != 409 and rsp.status_code != 200 and rsp.status_code != 201:
                 log.error("Failed to create a session: %d %s" % (rsp.status_code, rsp))
